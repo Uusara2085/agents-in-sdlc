@@ -19,7 +19,7 @@ lastUpdated: 2026-07-09
 모범적인 개발 조직인 Tailspin Toys에는 개발 방식에 관한 지침과 요구 사항이 있습니다. 여기에는 다음 항목이 포함됩니다.
 
 - 주석은 코드를 다시 설명하기보다 의도와 명확하지 않은 결정을 설명해야 합니다.
-- `db/`와 `src/lib/`에서 내보내는 함수는 TSDoc/JSDoc으로 목적, 매개 변수, 반환값을 문서화하고, 주입 가능한 `db` 인수가 있다면 함께 설명해야 합니다.
+- `db/`와 `src/lib/`에서 내보내는 함수는 TSDoc(TypeScript Documentation)/JSDoc으로 목적, 매개 변수, 반환값을 문서화하고, 주입 가능한 `db` 인수가 있다면 함께 설명해야 합니다.
 - 재사용 가능한 Astro 구성 요소는 `Props` 계약을 문서화하고, 관련 코드가 바뀌면 주석도 최신 상태로 유지해야 합니다.
 - 기존 서식과 린트 지침을 보존해야 합니다.
 
@@ -64,8 +64,9 @@ lastUpdated: 2026-07-09
 > 지침 파일은 Copilot이 생성하는 코드에 큰 영향을 주므로 Copilot을 명확하게 안내하는지 주의 깊게 확인해야 합니다. Copilot으로 초안을 만든 다음 요구 사항을 충족하는지 직접 검토할 수 있습니다. 좋은 출발점이 되는 [Awesome Copilot의 지침 파일 모음][awesome-copilot]도 확인할 수 있습니다.
 
 1. 동일한 파일 캔버스에서 `.github/copilot-instructions.md`로 이동합니다.
-2. 파일 중간쯤에 있는 **Code formatting requirements** 헤더를 찾습니다.
-3. 해당 헤더 아래의 마지막 글머리 기호로 다음 내용을 추가합니다.
+2. 파일 도구 모음에서 코드 버튼(`<>` 아이콘)을 선택하여 편집 가능한 소스 보기로 전환합니다.
+3. 파일 중간쯤에 있는 **Code formatting requirements** 헤더를 찾습니다.
+4. 해당 헤더 아래의 마지막 글머리 기호로 다음 내용을 추가합니다.
 
    ```plaintext
    All new TypeScript should contain TSDocs comments for documentation purposes.

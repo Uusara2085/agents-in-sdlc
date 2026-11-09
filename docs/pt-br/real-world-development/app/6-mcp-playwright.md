@@ -22,7 +22,7 @@ Embora os testes de unidade e de ponta a ponta sejam importantes, validar atuali
 
 O [Model Context Protocol (MCP)][mcp-blog-post] oferece aos agentes de IA uma forma de se comunicar com ferramentas e serviços externos. Com o MCP, os agentes de IA podem se comunicar com essas ferramentas e serviços em tempo real. Isso permite que eles acessem informações atualizadas, usando recursos, e realizem ações em seu nome, usando ferramentas.
 
-Essas ferramentas e esses recursos são acessados por meio de um servidor MCP, que funciona como uma ponte entre o agente de IA e as ferramentas e os serviços externos. O servidor MCP é responsável por gerenciar essa comunicação, seja com APIs existentes ou com ferramentas locais, como pacotes NPM. Cada servidor MCP representa um conjunto diferente de ferramentas e recursos que o agente de IA pode acessar.
+Essas ferramentas e esses recursos são acessados por meio de um servidor MCP, que funciona como uma ponte entre o agente de IA e as ferramentas e os serviços externos. O servidor MCP é responsável por gerenciar essa comunicação, seja com interfaces de programação de aplicações (APIs) existentes ou com ferramentas locais, como pacotes NPM. Cada servidor MCP representa um conjunto diferente de ferramentas e recursos que o agente de IA pode acessar.
 
 Alguns servidores MCP conhecidos são:
 
@@ -39,8 +39,8 @@ Há muitos outros servidores MCP que fornecem acesso a diferentes ferramentas e 
 Você gerencia os servidores MCP por meio de **Customize** na barra lateral. Servidores configurados para seus repositórios ou para o Copilot CLI já podem estar disponíveis no aplicativo, então verifique antes de adicionar um duplicado. A [documentação de personalização do aplicativo][customize-app] apresenta as opções disponíveis.
 
 1. Selecione **Customize** na barra lateral.
-2. Selecione **MCP** e verifique em **Installed** se já existe um servidor Playwright.
-3. Se necessário, encontre **Playwright** entre os servidores disponíveis ou use o fluxo de servidor personalizado documentado pelo publicador.
+2. Abra a lista suspensa **All types** e selecione **MCP**. Em seguida, verifique em **Installed** se já existe um servidor Playwright.
+3. Se o Playwright ainda não estiver instalado, localize-o entre os servidores disponíveis e selecione **Add server**.
 4. Revise o publicador, a configuração e as solicitações de instalação antes de aprová-las. Siga as instruções para adicionar o servidor; políticas da organização ou pré-requisitos ausentes podem bloquear a configuração.
 5. Volte à sessão de filtragem no modo **Interactive** e confirme que as ferramentas MCP do Playwright estão disponíveis.
 

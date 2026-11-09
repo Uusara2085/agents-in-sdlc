@@ -19,7 +19,7 @@ lastUpdated: 2026-09-18
 - 코드를 검토합니다.
 - 포워딩된 브라우저에서 기능을 직접 확인합니다.
 
-이후 레슨에서는 리포지토리 지침을 업데이트하고 기존 `quality-checks` 스킬을 사용자 지정하고 MCP 검증을 추가하고 QA 에이전트를 만든 뒤 기능 PR을 엽니다.
+이후 레슨에서는 리포지토리 지침을 업데이트하고 기존 `quality-checks` 스킬을 사용자 지정하고 모델 컨텍스트 프로토콜(Model Context Protocol, MCP) 검증을 추가하고 품질 보증(quality assurance, QA) 에이전트를 만든 뒤 기능 풀 리퀘스트(PR)를 엽니다.
 
 ## 시나리오
 
@@ -27,7 +27,7 @@ Tailspin Toys의 카탈로그가 커지면서 방문자가 카테고리와 퍼�
 
 ## 배경
 
-AI 코딩 에이전트를 개발 작업 흐름에 추가해도 기본 원칙은 바뀌지 않습니다. 오히려 더 중요해집니다. 대부분의 개발자는 다음과 비슷한 과정을 따릅니다.
+인공지능(artificial intelligence, AI) 코딩 에이전트를 개발 작업 흐름에 추가해도 기본 원칙은 바뀌지 않습니다. 오히려 더 중요해집니다. 대부분의 개발자는 다음과 비슷한 과정을 따릅니다.
 
 1. 수행할 작업을 설명하는 등록된 이슈에서 시작합니다.
 2. 구현할 작업을 계획합니다.
@@ -88,7 +88,7 @@ Plan 모드에서 시작해 계획을 검토한 뒤 Autopilot으로 구현합니
 2. 이전 단계에서 추가한 이슈 참조 뒤에 다음 프롬프트를 입력합니다.
 
    ```plaintext
-   이 기능을 구현하기 위한 계획을 작성해 주세요.
+   Create a plan for implementing this feature.
    ```
 
 Copilot은 프로젝트를 살펴본 다음 가장 적절한 접근 방식을 결정해 계획을 작성합니다.
@@ -128,7 +128,7 @@ Autopilot 모드에서는 Copilot이 작업을 완료했다고 판단할 때까�
 1. Copilot에 앱을 시작하도록 요청합니다.
 
    ```plaintext
-   브라우저에서 필터링 기능을 확인할 수 있도록 앱을 시작해 주세요. URL을 알려 주고 서버는 계속 실행 상태로 두세요.
+   Start the app so I can try the filtering feature in my browser. Tell me the URL and leave the server running.
    ```
 
 2. Codespaces에서 포트 `4321`을 사용할 수 있다고 표시되면 **Open in Browser**를 선택합니다.

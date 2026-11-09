@@ -33,8 +33,8 @@ Com todo o código criado e revisado, vamos permitir que o Agent Merge gerencie 
 
 1. Use o seletor de agentes para selecionar **Default agent**.
 2. Selecione o menu suspenso ao lado de **Create PR**.
-3. Selecione **Agent merge**. O botão mudará para **Agent merge**.
-4. Selecione **Agent merge** para iniciar o processo.
+3. Selecione **Agent Merge**. O botão mudará para **Agent Merge**.
+4. Selecione o botão **Agent Merge** para iniciar o processo. Escolher a opção no menu suspenso não inicia o processo.
 
 O processo do Agent Merge começa. Ele vai:
 
@@ -47,9 +47,16 @@ O processo do Agent Merge começa. Ele vai:
 
 Vamos permitir que o Agent Merge também faça o merge do PR quando tudo for concluído com sucesso!
 
-5. Selecione o menu suspenso ao lado de **Agent merge**.
-6. Confirme se há uma marca ao lado de **Merge pull request**.
+5. Revise o diff do PR e as evidências de verificação antes de conceder permissão de merge.
+6. Selecione o menu suspenso ao lado de **Agent Merge**.
+7. Confirme se há uma marca ao lado de **Merge pull request**.
+8. Peça explicitamente ao agente que faça o merge:
 
+    ```plaintext
+    Merge the PR once all required checks and approvals pass. Do not bypass repository protections.
+    ```
+
+9. Acompanhe o progresso e resolva os bloqueios relatados. Antes de continuar, confirme que o status do PR é **Merged**; a permissão de merge habilitada ou um agente em execução não confirma que o merge foi concluído.
 
 > [!IMPORTANT]
 > O Agent Merge não ignora as proteções do repositório nem as permissões ausentes. Resolva esses bloqueios antes de continuar.

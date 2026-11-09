@@ -15,7 +15,7 @@ GitHub Copilot app は、Copilot と GitHub の両方を一元的に扱うデス
 
 ## Node.js をインストールする
 
-いくつかのレッスンでは、エージェントに機能を構築させ、Tailspin Toys のテストスイートをローカルで実行します。そのためには [**Node.js**][nodejs] (プロジェクトに必要な唯一のランタイム) が必要です。現在の **LTS** リリースをインストールしてください。
+いくつかのレッスンでは、エージェントに機能を構築させ、Tailspin Toys のテストスイートをローカルで実行します。そのためには [**Node.js**][nodejs] (プロジェクトに必要な唯一のランタイム) が必要です。現在の長期サポート (LTS) リリースをインストールしてください。
 
 どのプラットフォームでも、公式インストーラーを使うのが最も簡単です。
 
@@ -24,9 +24,10 @@ GitHub Copilot app は、Copilot と GitHub の両方を一元的に扱うデス
 
     ```shell
     node --version
+    npm --version
     ```
 
-3. プロジェクトの README と `package.json` に記載されている要件を満たしていれば、次のセクションに進めます。
+3. 両方のコマンドが成功し、Node.js がプロジェクトの README と `package.json` に記載された要件を満たしていれば、次のセクションに進みます。
 
 > [!TIP]
 > Node.js がインストールされていない場合、または更新が必要な場合にのみ、以降の手順を実行してください。
@@ -39,12 +40,16 @@ GitHub Copilot app は、Copilot と GitHub の両方を一元的に扱うデス
 
     ```bash
     node --version
+    npm --version
     ```
 
-9. インストールしたバージョンが表示されることを確認します。
+9. インストールした Node.js と npm のバージョンが表示されることを確認します。
 
 > [!IMPORTANT]
-> 各ワークツリーには、プロジェクトの依存関係と E2E チェック用の Playwright Chromium も必要です。ワークツリーの準備では学習用リポジトリの README に従い、インストールの要求は内容を確認してから承認してください。
+> Copilot app のエージェントも `node --version` と `npm --version` を実行できる必要があります。普段使っているターミナルで成功しても、アプリから利用できるとは限りません。Node.js のインストール後や `PATH` の変更後は、アプリを完全に終了してから再起動してください。セッションでコマンドが失敗する場合は、続行する前に[セッション環境のトラブルシューティング][session-environment]を行ってください。
+
+> [!IMPORTANT]
+> 各ワークツリーには、プロジェクトの依存関係とエンドツーエンド (E2E) チェック用の Playwright Chromium も必要です。ワークツリーの準備では学習用リポジトリの README に従い、インストールの要求は内容を確認してから承認してください。
 
 ## ラボ用リポジトリを設定する
 
@@ -86,3 +91,4 @@ Tailspin Toys プロジェクトの自分用コピーを使って作業します
 [node-download]: https://nodejs.org/en/download
 [template-repository]: https://docs.github.com/repositories/creating-and-managing-repositories/creating-a-template-repository
 [about-copilot-app]: https://docs.github.com/copilot/concepts/agents/github-copilot-app
+[session-environment]: ../3-agent-modes/#issue-からセッションを開始する

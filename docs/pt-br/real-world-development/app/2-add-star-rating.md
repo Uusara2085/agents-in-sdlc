@@ -31,9 +31,9 @@ Em uma sessão, você verá três elementos: a **conversa** com o agente, a **at
 Vamos iniciar uma nova sessão para começar a explorar o projeto e implementar o recurso. Em uma [lição anterior][prior-lesson], você adicionou o projeto por meio do repositório do GitHub. Criaremos uma nova sessão para esse repositório e solicitaremos a alteração.
 
 1. Volte ao aplicativo GitHub Copilot ou abra-o.
-2. Selecione **+** ao lado de **Projects**.
+2. Selecione **+** na parte superior da barra lateral para iniciar uma sessão.
 3. Selecione `tailspin-toys` como repositório.
-4. Escolha **new working tree** e o modo **Interactive** abaixo da caixa de prompt. Use o prompt a seguir para solicitar a alteração:
+4. Escolha uma **new working tree** e o modo **Interactive** abaixo da caixa de prompt. Use o prompt a seguir para solicitar a alteração:
 
     ```plaintext
     Show each game's starRating out of 5 in the game cards on the list page. If the rating is null, show "No rating yet". Keep the card layout as it is, add tests, and run the relevant checks.
@@ -41,7 +41,7 @@ Vamos iniciar uma nova sessão para começar a explorar o projeto e implementar 
 
 5. Pressione <kbd>Enter</kbd> para enviar o prompt ao Copilot.
 
-O aplicativo Copilot começa criando um novo worktree, uma cópia isolada do projeto. Em seguida, ele explora o projeto, localiza os arquivos que precisam ser atualizados e cria o código necessário para adicionar o novo recurso. Você acabou de adicionar um recurso com o aplicativo Copilot.
+O aplicativo Copilot começa criando um novo worktree, uma cópia isolada do projeto. Em seguida, ele explora o projeto, localiza os arquivos que precisam ser atualizados e cria o código necessário para adicionar o novo recurso.
 
 ## Revisar o diff
 
@@ -70,7 +70,7 @@ Todas as alterações geradas por IA devem ser revisadas antes do merge, mesmo a
 
 ## Verificar as alterações
 
-Revise os resultados das verificações automatizadas do agente antes de abrir um navegador. Confirme que os testes cobrem um `starRating` numérico e a alternativa para `null`. Um pré-requisito ausente ou uma verificação ignorada não conta como aprovação; revise qualquer solicitação de instalação antes de aprová-la.
+Revise os resultados das verificações automatizadas do agente antes de abrir um navegador. Confirme que os testes de ponta a ponta (E2E) cobrem um `starRating` numérico e a alternativa para `null`. Um pré-requisito ausente ou uma verificação ignorada não conta como aprovação; revise qualquer solicitação de instalação antes de aprová-la.
 
 É claro que não devemos apenas ler o código e presumir que funciona. Vamos pedir ao Copilot que abra o site para examinarmos a interface atualizada. Para isso, podemos pedir que ele inicie o site e o abra em um canvas de navegador.
 
@@ -97,10 +97,11 @@ Você criou o recurso! Agora é hora de criar um pull request (PR) para fazer o 
 
 1. Selecione **Create PR** no canto superior direito.
 2. Se solicitado, selecione **Sign in with your browser** e siga as instruções para se autenticar.
-3. O Copilot começará a criar o PR.
-4. Selecione o indicador **PR** logo acima do chat para abrir o PR no painel de revisão e visualizá-lo. Faça as revisões necessárias nesse painel.
-5. Quando estiver tudo pronto, selecione **Ready to merge**.
-6. Na nova caixa de diálogo, selecione **Merge pull request** para fazer o merge do pull request.
+3. Se o Copilot explicar que a política do repositório exige uma issue correspondente antes de criar o PR, confirme que ele deve seguir esse processo.
+4. O Copilot começará a criar o PR.
+5. Selecione o indicador **PR** logo acima do chat para abrir o PR no painel de revisão e visualizá-lo. Faça as revisões necessárias nesse painel.
+6. Quando estiver tudo pronto, selecione **Ready to merge**.
+7. Na nova caixa de diálogo, selecione **Merge pull request** para fazer o merge do pull request.
 
 ## Resumo e próximos passos
 

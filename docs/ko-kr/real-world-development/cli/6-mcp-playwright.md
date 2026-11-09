@@ -20,7 +20,7 @@ lastUpdated: 2026-09-18
 
 ## Model Context Protocol(MCP)이란?
 
-[Model Context Protocol(MCP)][mcp-blog-post]은 AI 에이전트가 외부 도구 및 서비스와 통신할 수 있도록 합니다. MCP를 사용하면 최신 정보를 확인하고 사용자를 대신해 작업을 수행할 수 있습니다.
+[모델 컨텍스트 프로토콜(Model Context Protocol, MCP)][mcp-blog-post]은 인공지능(artificial intelligence, AI) 에이전트가 외부 도구 및 서비스와 통신할 수 있도록 합니다. MCP를 사용하면 외부 도구 및 서비스와 실시간으로 통신하여 최신 정보를 확인하고 사용자를 대신해 작업을 수행할 수 있습니다.
 
 에이전트는 MCP 서버를 통해 도구와 리소스에 접근합니다. MCP 서버는 에이전트와 외부 도구 및 서비스 사이의 연결 역할을 합니다. 각 MCP 서버에서 에이전트가 사용할 수 있는 도구와 리소스가 제공됩니다.
 
@@ -66,7 +66,7 @@ Playwright MCP 서버를 아직 사용할 수 없다면 추가하여 Copilot이 
 1. 다음 프롬프트로 Copilot에 Playwright MCP 서버를 사용해 기능을 검증하도록 요청합니다.
 
    ```plaintext
-   앱을 시작하고 Playwright MCP로 이슈와 계획에 따라 필터링 기능을 확인해 주세요. 변경하지 말고 무엇이 작동하고 작동하지 않는지 알려 주세요. 작업이 끝나면 시작한 서버를 중지해 주세요.
+   Start the app and use Playwright MCP to check filtering against the issue and our plan. Tell me what works and what doesn't, without making changes. Stop the server you started when you're done.
    ```
 
 > [!NOTE]

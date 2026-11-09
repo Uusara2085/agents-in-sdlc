@@ -1,12 +1,12 @@
 ---
 slug: ja-jp/real-world-development/vscode
-title: "VS Code"
+title: "Visual Studio Code"
 authors:
   - geektrainer
 lastUpdated: 2026-06-30
 ---
 
-VS Code の **[GitHub Copilot Chat](https://code.visualstudio.com/docs/copilot/chat/copilot-chat)** を使うと、普段のコードエディターで GitHub Copilot を利用できます。Visual Studio Code (および GitHub Codespaces) で、Copilot Chat のエージェントモードを操作し、MCP を通じて外部ツールを接続し、カスタムエージェントを活用します。すべて IDE を離れずに進められ、Copilot はファイル、ターミナル、問題の全体を把握できます。
+Visual Studio Code の **[GitHub Copilot Chat](https://code.visualstudio.com/docs/copilot/chat/copilot-chat)** を使うと、普段使っているコード エディターで GitHub Copilot を利用できます。Visual Studio Code と GitHub Codespaces で Copilot Chat の agent mode を使い、Model Context Protocol (MCP) を通じて外部ツールを接続し、カスタム エージェントを活用します。統合開発環境 (IDE) を離れずに作業でき、Copilot はファイル、ターミナル、問題を確認できます。
 
 まずカスタム指示を追加し、Copilot がその指示に従う様子を確認します。次に、エージェントモードを使って UI、データ層、テストにまたがるフィルター機能を構築します。その後、Playwright MCP サーバーを接続し、プルリクエストを作成する前に Copilot にブラウザーを操作させて機能をテストします。最後に、アクセシビリティ作業用のカスタムエージェントをレビューして使い、Copilot の変更を監視し、方向付けながら反復して改善します。すべてエディターを離れずに進められます。
 

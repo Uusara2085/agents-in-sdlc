@@ -13,11 +13,11 @@ lastUpdated: 2026-09-18
 - npm을 사용해 GitHub Copilot CLI를 설치합니다.
 - GitHub 계정으로 인증합니다.
 - 워크숍 리포지토리를 신뢰하고 간단한 대화를 시도합니다.
-- 기본 제공 GitHub MCP 서버를 사용해 필터링 이슈를 찾습니다.
+- 기본 제공 GitHub 모델 컨텍스트 프로토콜(Model Context Protocol, MCP) 서버를 사용해 필터링 이슈를 찾습니다.
 
 ## 시나리오
 
-팀은 늘어나는 백로그를 처리하기 위해 AI 에이전트를 사용하기 시작했습니다. Copilot CLI는 많은 개발자가 주로 사용하는 터미널에서 이러한 기능을 제공합니다. 이 레슨에서는 도구를 설치하고 인증하여 워크숍의 나머지 부분에 사용할 준비를 합니다.
+팀은 늘어나는 백로그를 처리하기 위해 인공지능(artificial intelligence, AI) 에이전트를 사용하기 시작했습니다. Copilot CLI는 많은 개발자가 주로 사용하는 터미널에서 이러한 기능을 제공합니다. 이 레슨에서는 도구를 설치하고 인증하여 워크숍의 나머지 부분에 사용할 준비를 합니다.
 
 ## Copilot CLI 설치하기
 
@@ -79,7 +79,7 @@ Copilot CLI를 처음 실행하면 GitHub 계정으로 인증하라는 메시지
 3. 다음 질문을 입력해 모든 항목이 작동하는지 확인합니다.
 
    ```plaintext
-   이 프로젝트에서 중요한 파일은 무엇인가요?
+   What are the key files in this project?
    ```
 
 4. 응답을 읽고 Copilot이 답변 전에 리포지토리를 살펴보는지 확인합니다.
@@ -87,7 +87,7 @@ Copilot CLI를 처음 실행하면 GitHub 계정으로 인증하라는 메시지
 6. Copilot에 필터링 이슈를 찾아 달라고 요청합니다.
 
    ```plaintext
-   GitHub MCP를 사용해 이 리포지토리에서 "Allow users to filter games by category and publisher"라는 제목의 이슈를 찾아 주세요. URL과 간단한 요약을 알려 주세요. 아무것도 변경하지 마세요.
+   Using GitHub MCP, find the issue in this repository titled "Allow users to filter games by category and publisher." Give me its URL and a short summary. Don't change anything.
    ```
 
 7. URL을 열어 이슈를 읽습니다. 간단한 변경을 완료한 뒤 이 이슈를 사용합니다.

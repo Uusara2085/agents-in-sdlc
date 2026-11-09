@@ -19,7 +19,7 @@ lastUpdated: 2026-09-18
 Tailspin Toys에는 개발 관행을 위한 지침과 요구 사항이 있습니다.
 
 - 주석은 코드 내용을 반복하지 않고 의도나 명확하지 않은 결정을 설명해야 합니다.
-- `db/`와 `src/lib/`에서 내보내는 함수에는 목적, 매개 변수, 반환 값이 포함된 TSDoc/JSDoc을 작성해야 합니다. `db`를 인수로 전달할 수 있다면 문서에 이를 포함해야 합니다.
+- `db/`와 `src/lib/`에서 내보내는 함수에는 목적, 매개 변수, 반환 값이 포함된 TSDoc(TypeScript Documentation)/JSDoc을 작성해야 합니다. `db`를 인수로 전달할 수 있다면 문서에 이를 포함해야 합니다.
 - 재사용 가능한 Astro 컴포넌트에는 `Props` 계약을 설명해야 하며, 관련 코드가 바뀌면 주석도 최신 상태로 유지해야 합니다.
 - 기존 서식 및 린트 지침을 유지해야 합니다.
 
@@ -56,7 +56,7 @@ Tailspin Toys에는 개발 관행을 위한 지침과 요구 사항이 있습니
 2. 마지막 항목으로 다음을 추가합니다.
 
    ```markdown
-   - 새 TypeScript 코드에는 문서화를 위한 TSDoc 주석을 작성합니다.
+   - All new TypeScript should contain TSDocs comments for documentation purposes.
    ```
 
 파일이 자동으로 저장됩니다.
@@ -76,7 +76,7 @@ Copilot CLI는 대화를 시작할 때 리포지토리 지침을 불러옵니다
 3. 다음 프롬프트로 Copilot에 업데이트된 지침을 적용하도록 요청합니다.
 
    ```plaintext
-   방금 지침과 코드 작성 지침을 업데이트했습니다. 생성한 코드에 새 지침을 적용해 주시겠어요?
+   We just updated our instructions and code guidance. Can you please update the code you generated to match that guidance?
    ```
 
 4. `/diff`를 입력하고 변경된 TypeScript 파일을 확인합니다. 새로 생성된 TSDoc 주석이 코드 동작을 정확히 설명하는지 살펴봅니다.

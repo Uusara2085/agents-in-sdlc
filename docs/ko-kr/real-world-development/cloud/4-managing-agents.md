@@ -25,12 +25,12 @@ Copilot cloud agent에 할당된 작업의 현재 상태를 확인합니다.
 1. [Copilot agents 페이지](https://github.com/copilot/agents)로 이동합니다.
 2. 기본 창과 왼쪽 창에 표시되는 작업 목록을 살펴봅니다. 다음과 같이 Copilot에 할당한 작업이 표시됩니다.
    - 코드베이스 문서 업데이트
-   - 게임 상세 페이지에 관련 게임 표시
+   - 게임 수정을 위한 애플리케이션 프로그래밍 인터페이스(application programming interface, API) 생성
    - 웹사이트에 고대비 모드 추가
 3. 실행 중인 작업 하나를 선택하고 Copilot이 수행한 작업을 검토합니다. 다음 작업을 수행할 수 있습니다.
    - 리포지토리에서 코드 확인
    - Copilot 작업 환경 생성
-   - MCP 서버 설정
+   - 모델 컨텍스트 프로토콜(Model Context Protocol, MCP) 서버 설정
    - 할당된 작업 완료를 위한 여러 단계 수행
 
 > [!NOTE]
